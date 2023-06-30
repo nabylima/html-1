@@ -1,0 +1,92 @@
+<html>
+<head><title>Introdução ao HTML na Prática</title> </head>
+<body></body>
+<h1>O que é HTML</h1>
+<hr>
+<p>HTML<sup>*</sup> (<i>HyperText Markup Language</i>) não é uma linguagem de programação, é uma linguagem de marcação utilizada para dizer ao seu navegador como estruturar a página web que você visita. 
+    A página pode ser tanto complicada como simples quanto o desenvolvedor web desejar que seja. HTML consiste em uma série de elementos que você usa para anexar, 
+    envolver ou marcar diferentes partes do conteúdo para que apareça ou aja de uma certa maneira. 
+    O fechamento das tags pode transformar uma parte do conteúdo dentro do elemento em um link para direcionar à uma outra página web, colocar as palavras em itálico, e assim por diante. 
+    Ele é composto por três principais elementos que sãos as tags html, head, body. </p> 
+
+    <p>É possível compreender o documento em HTML de uma maneira muito simples, através de uma divisão de blocos das tags essenciais, conforme a a seguinte estrutura:</p>
+<ol>
+    <li><strong>Definição do documento (doctype):</strong> O doctype não é uma tag HTML, mas uma instrução para o navegador e outros programas que podem ler seu site, que o código encontrado ali é um código HTML. Assim eles sabem o que fazer para mostrar seu site da melhor forma possível. Lembre-se: o doctype é OBRIGATÓRIO e deve ser sempre a <sub>PRIMEIRA LINHA</sub> do seu documento.</li><br>
+    <li><strong>Cabeça (head):</strong> Contém informações que não são transpostas visivelmente para o usuário/leitor do documento. São dados implícitos, de uso e controle do documento: vinculação com outros arquivos, aplicação de lógica de programação de scripts e metadados. Na prática, todo o conteúdo do cabeçalho fica delimitado entre a abertura e fechamento tag head.</li><br>
+    <li><strong>Corpo (body):</strong> Trata-se do documento em si, ou seja, a informação legível para o usuário/leitor do documento. É todo e qualquer texto que se deseja apresentar, assim como toda e qualquer forma de mídia de saída (imagens, sons, miniaplicativos embutidos, conteúdo multimídia, etc). Além disso, toda a apresentação de entrada de dados (formulários) também se alica neste seção do documento.</li><br>
+</ol>
+<hr />
+ <h3>Menu de Atalho:</h3>
+ <ul>
+    <li><a href="#cabecalho">O que está no HEAD?</li></html></a>
+    <li><a href="#atributos">Atributos</li></a>
+    <li><a href="#hierarquia">Estrutural</li></a>
+    <li><a href="#listas">Listas</li></a>
+    <li><a href="#links">Links</li></a>
+    <li><a href="about.html" title="Clique para saber mais sobre essa página.">Sobre</a></li>
+ </ul>
+<hr />
+<h2>Anatomia de um elemento HTML</h2>
+<img width="500" src="anatomia-do-html.png" />
+
+<n><h3>As partes principais do elemento são:</h3></n>
+ <ol>
+    <li><strong>Tag de abertura:</strong> Consiste no nome do elemento ( neste caso: p ), envolvido entre parênteses angulares de abertura e fechamento. Isso indica onde o elemento começa, 
+        ou inicia a produzir efeito — neste caso, onde o parágrafo se inicia.</li>
+        <li><strong>Tag de fechamento:</strong> É o mesmo que a tag de abertura, exceto que este inclui uma barra diagonal antes do nome do elemento. Indica onde o elemento termina — neste caso, onde fica o fim do parágrafo. 
+        Falhar em incluir o fechamento de uma tag é um erro comum para iniciantes e pode levar a resultados estranhos.</li>
+        <li><strong>O conteúdo:</strong> Este é o conteúdo do elemento, que neste caso é somente texto.</li>
+        <li><strong>O elemento:</strong> A tag de abertura, mais a tag de fechamento, mais o conteúdo, é igual ao elemento.</li>
+</ol> 
+<h2 id="atributos">Atributos das Tags:</h2>
+<h3>O que são Atributos?</h3>Atributos são informações que passamos na Tag para que ela se comporte da maneira esperada. Existem atributos globais (que funcionam em todas as Tags) e específicos (que são direcionados para cada Tag, através de especificação).
+
+Os Atributos possuem nome e um valor, existem Atributos que você vai usar praticamente sempre e existem outros que serão mais raros.
+<h2 id="cabecalho">O que está no cabeçalho? Metadados em HTML</h2>
+<p>O cabeçalho <strong><small>HTML</small></strong></small> é o conteúdo do elemento <mark>< head ></mark> — ao contrário do conteúdo do elemento <mark>< body ></mark> (que são exibidos na página quando carregados no navegador), 
+    o conteúdo do cabeçalho não é exibido na página, em vez disso, o trabalho do cabeçalho é conter metadados sobre o documento.</p>
+<h2>Adicionando um título</h2>
+<p>Nós já vimos o elemento <mark>< title ></mark> em ação — ele pode ser usado para adicionar um título ao documento, mas pode ser confundido com o elemento <mark>< h1 ></mark>, 
+    que é usado para adicionar um título de nível superior ao conteúdo do <strong>body</strong> — as vezes também é associado como o título da página. <strong><u>Mas são coisas diferentes!</strong></u></p>
+    <h2>O básico: Cabeçalhos e Parágrafos</h2>
+    <p>O texto mais estruturado é composto por títulos e parágrafos,esteja você lendo uma história, um jornal, um livro da faculdade, uma revista, etc. Cabeçalhos são normalmente utilizados para identificar páginas e seções e possuem aparência diferenciada do restante do texto. 
+        No HTML há seis níveis de cabeçalhos/títulos que podem ser utilizados por meio das tags <strong><i>h1, h2, h3, h4, h5 e h6,</i></strong> sendo h1 o maior/mais relevante e h6 o menor/menos relevante.
+        Em HTML, cada parágrafo deve ser envolvido em um elemento <mark>< p ></mark>.</p>
+        
+    <h3 id="hierarquia">Implementando hierarquia estrutural</h3>
+    Como exemplo, em uma história, <strong>< h1 ></strong> representaria o título da história, <strong>< h2 ></strong> representaria o título de cada capítulo e <strong>< h3 ></strong> representaria sub-seções de cada capítulo, e assim por diante:
+<p>
+< h1 >O furo esmagador< /h1 ><br /><br />
+
+< p >Por Chris Mills< /p ><br /><br />
+
+< h2 >Capítulo 1: A noite escura< /h2 ><br /><br />
+
+< p>Era uma noite escura. Em algum lugar, uma coruja piou. A chuva caiu no chão ...< /p><br /><br />
+
+< h2>Capítulo 2: O eterno silêncio< /h2><br /><br />
+
+< p>Nosso protagonista não podia ver mais que um relance da figura sombria ...< /p><br /><br />
+
+< h3>O espectro fala< /h3><br /><br />
+
+< p>Várias horas se passaram, quando, de repente, o espectro ficou em pé e exclamou: "Por favor, tenha piedade da minha alma!"< /p></p>
+
+<p>Depende realmente de você, o quê, exatamente, representam os elementos envolvidos, desde que a hierarquia faça sentido. Você só precisa ter em mente algumas das melhores práticas ao criar tais estruturas:</p> </p>
+<ul>
+<li>Preferencialmente, você deve usar apenas um <strong><mark>< h1 ></mark></strong> por página — esse é o título do nível superior e todos os outros ficam abaixo dele, na hierarquia.</li>
+<li>Certifique-se de usar os títulos na ordem correta na hierarquia. Não use <strong><mark>< h3 ></mark></strong> para representar subtítulos, seguido de <strong><mark>< h2 ></mark></strong> para representar sub-subtítulos - isso não faz sentido e levará a resultados estranhos.</li>
+<li>Dos seis níveis de cabeçalho disponíveis, você deve usar no máximo três por página, a menos que considere necessário usar mais. Documentos com vários níveis (ou seja, uma hierarquia profunda de cabeçalho) tornam-se difíceis de navegar. Nessas ocasiões, é aconselhável espalhar o conteúdo por várias páginas, se possível.</li>
+</ul></p>
+<h2 id="listas" >Listas Ordenadas e Não Ordenadas:</h2>
+<p>Agora voltemos nossa atenção para as listas. As listas estão em toda parte na vida — de sua lista de compras à lista de instruções que você seguiu inconscientemente para chegar à sua casa todos os dias.</p>
+<ul><li><strong>Não ordenada:</strong></li></ul>
+<p>As listas não ordenadas são usadas para marcar listas de itens para os quais a ordem dos itens não importa — vamos pegar uma lista de compras como um exemplo.
+Toda lista desordenada começa com um <mark>< ul ></mark> — isso envolve todos os itens da lista, O último passo é envolver cada item da lista em um elemento <mark>< li ></mark>.</p>
+<ol><strong><li>Ordenada:</li></strong></ol>
+As listas ordenadas são listas em que a ordem dos itens é importante, A estrutura de marcação é a mesma das listas não ordenadas, exceto que você deve conter os itens da lista em um elemento <mark>< ol ></mark>, em vez de <mark>< ul ></mark>.
+
+<h2 id="links">Links</h2>
+<blockquote><p>Os <strong><i>hiperlinks</i></strong> são uma das inovações mais interessantes que a Web oferece. Bem, eles são uma característica da Web desde o início, mas são o que torna a Web como ela é — eles nos permitem vincular nossos documentos a qualquer outro documento (ou outro recurso) que queremos. Também podemos vincular para partes específicas de documentos e podemos disponibilizar aplicativos em um endereço web simples (em contraste com aplicativos nativos, que devem ser instalados e tantas outras coisas). Qualquer conteúdo da web pode ser convertido em um link, para que, quando clicado (ou ativado de outra forma) fará com que o navegador vá para outro endereço <strong><small>(URL)</small></strong>.</p></blockquote>
+
+</html>
